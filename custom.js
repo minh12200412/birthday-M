@@ -1,7 +1,8 @@
 // 霸都丶傲天 2019.10.10
 $(function () {
     let dom = document.createElement("span");
-    let delay = 2000;
+    let delay = 3000;
+    let fadeDuration = 2000;
     config.texts.forEach(function (item) {
         let p = document.createElement("p");
         p.innerHTML = item;
@@ -14,7 +15,7 @@ $(function () {
         }
         dom.appendChild(p);
         setTimeout(function () {
-            $(p).fadeIn(); // Dùng fadeIn để hiển thị từ từ
+            $(p).fadeIn(fadeDuration); // Dùng fadeIn để hiển thị từ từ
         }, delay * (index + 1));
     });
     $("#texts-container").append(dom.innerHTML);
