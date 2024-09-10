@@ -1,9 +1,9 @@
 // 霸都丶傲天 2019.10.10
 $(function () {
     let dom = document.createElement("span");
-    let delay = 3000;
-    let fadeDuration = 2000;
-    config.texts.forEach(function (item) {
+    let delay = 4000;
+    let fadeDuration = 3000;
+    config.texts.forEach(function (item,, index) {
         let p = document.createElement("p");
         p.innerHTML = item;
         p.style.display = 'none';
