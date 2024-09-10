@@ -5,6 +5,7 @@ $(function () {
     config.texts.forEach(function (item) {
         let p = document.createElement("p");
         p.innerHTML = item;
+        p.style.display = 'none';
         if (config.imgs && config.imgs[item]) {
             let img = document.createElement("img");
             img.src = config.imgs[item];
