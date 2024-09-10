@@ -3,7 +3,7 @@ $(function () {
     let dom = document.createElement("span");
     let delay = 4000;
     let fadeDuration = 3000;
-    config.texts.forEach(function (item,, index) {
+    config.texts.forEach(function (item, index) {
         let p = document.createElement("p");
         p.innerHTML = item;
         p.style.display = 'none';
