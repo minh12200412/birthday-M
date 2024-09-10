@@ -11,9 +11,9 @@ $(function () {
             img.setAttribute("class", 'text-img');
             p.appendChild(img);
         }
-       setTimeout(function() {
+       // setTimeout(function() {
             dom.appendChild(p);
-        }, index * delay);
+        // }, index * delay);
     });
     $("#texts-container").append(dom.innerHTML);
 });
